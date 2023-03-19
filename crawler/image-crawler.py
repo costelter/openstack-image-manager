@@ -88,7 +88,7 @@ def main():
 
     # initialize database when run with --init-db
     if args.init_db:
-        database_initialize(config["database_name"])
+        database_initialize(config["database_name"], program_directory)
         sys.exit(0)
 
     # clone or update local repository when git is enabled
