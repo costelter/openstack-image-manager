@@ -203,7 +203,7 @@ def get_version_metadata(release, version):
 
 def main():
     # read configuration
-    config_filename = "etc/config.yaml"
+    config_filename = os.path.dirname(os.path.abspath(__file__)) + "etc/config.yaml"
 
     config = config_read(config_filename, "configuration")
     if config is None:
